@@ -86,6 +86,7 @@ const translations = {
     // Footer
     quickLinks: "Quick Links",
     followUs: "Follow Us",
+    ourProperties: "Our Properties",
     copyright: "© 2024 Kamadhenu Developers. All rights reserved.",
     
     // WhatsApp
@@ -168,6 +169,7 @@ const translations = {
     // Footer
     quickLinks: "ತ್ವರಿತ ಲಿಂಕ್‌ಗಳು",
     followUs: "ನಮ್ಮನ್ನು ಅನುಸರಿಸಿ",
+    ourProperties: "ನಮ್ಮ ಆಸ್ತಿಗಳು",
     copyright: "© 2024 ಕಾಮಧೇನು ಡೆವಲಪರ್ಸ್. ಎಲ್ಲಾ ಹಕ್ಕುಗಳನ್ನು ಕಾಯ್ದಿರಿಸಲಾಗಿದೆ.",
     
     // WhatsApp

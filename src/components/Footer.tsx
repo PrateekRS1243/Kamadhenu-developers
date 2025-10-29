@@ -110,19 +110,19 @@ const Footer: React.FC = () => {
             viewport={{ once: true }}
             className="space-y-6"
           >
-            <h4 className="text-lg font-bold">Our Properties</h4>
+          <h4 className="text-lg font-bold">{t('ourProperties')}</h4>
             <ul className="space-y-3">
               <li>
-                <span className="text-gray-400">Sikkeri Cross</span>
+             <span className="text-gray-400">{t('sikkeriTitle')}</span>
               </li>
               <li>
-                <span className="text-gray-400">Vivekanand Nagar</span>
+             <span className="text-gray-400">{t('vivekanandTitle')}</span>
               </li>
               <li>
-                <span className="text-gray-400">Basaveshwar Colony</span>
+             <span className="text-gray-400">{t('indiTitle')}</span>
               </li>
               <li>
-                <span className="text-gray-400">Simikeri</span>
+             <span className="text-gray-400">{t('simikeriTitle')}</span>
               </li>
             </ul>
           </motion.div>
