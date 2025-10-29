@@ -119,10 +119,10 @@ const Footer: React.FC = () => {
                 <span className="text-gray-400">Vivekanand Nagar</span>
               </li>
               <li>
-                <span className="text-gray-400">Indi Colony</span>
+                <span className="text-gray-400">Basaveshwar Colony</span>
               </li>
               <li>
-                <span className="text-gray-400">Upcoming Projects</span>
+                <span className="text-gray-400">Simikeri</span>
               </li>
             </ul>
           </motion.div>
