@@ -87,6 +87,9 @@ const translations = {
     quickLinks: "Quick Links",
     followUs: "Follow Us",
     ourProperties: "Our Properties",
+  contactInfo: "Contact Info",
+  footerAbout: "10 years of excellence in real estate development. Your trusted partner for premium property investments in Bagalkot.",
+  isoCertified: "ISO Certified",
     copyright: "© 2024 Kamadhenu Developers. All rights reserved.",
     
     // WhatsApp
@@ -101,7 +104,7 @@ const translations = {
     contact: "ಸಂಪರ್ಕಿಸಿ",
     
     // Hero Section
-    heroTitle: "ರಿಯಲ್ ಎಸ್ಟೇಟ್‌ನಲ್ಲಿ 25 ವರ್ಷಗಳ ಶ್ರೇಷ್ಠತೆ",
+  heroTitle: "ರಿಯಲ್ ಎಸ್ಟೇಟ್‌ನಲ್ಲಿ 10 ವರ್ಷಗಳ ಶ್ರೇಷ್ಠತೆ",
     heroSubtitle: "ಬಾಗಲಕೋಟೆಯಲ್ಲಿ ಪ್ರೀಮಿಯಂ ಆಸ್ತಿ ಅಭಿವೃದ್ಧಿಗೆ ನಿಮ್ಮ ವಿಶ್ವಾಸಾರ್ಹ ಪಾಲುದಾರ",
     viewProperties: "ಆಸ್ತಿಗಳನ್ನು ವೀಕ್ಷಿಸಿ",
     contactUs: "ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ",
@@ -167,9 +170,12 @@ const translations = {
     officeAddress: "ಕಚೇರಿ ವಿಳಾಸ",
     
     // Footer
-    quickLinks: "ತ್ವರಿತ ಲಿಂಕ್‌ಗಳು",
-    followUs: "ನಮ್ಮನ್ನು ಅನುಸರಿಸಿ",
-    ourProperties: "ನಮ್ಮ ಆಸ್ತಿಗಳು",
+  quickLinks: "ತ್ವರಿತ ಲಿಂಕ್‌ಗಳು",
+  followUs: "ನಮ್ಮನ್ನು ಅನುಸರಿಸಿ",
+  ourProperties: "ನಮ್ಮ ಆಸ್ತಿಗಳು",
+  contactInfo: "ಸಂಪರ್ಕ ಮಾಹಿತಿ",
+  footerAbout: "ರಿಯಲ್ ಎಸ್ಟೇಟ್ ಅಭಿವೃದ್ಧಿಯಲ್ಲಿ 10 ವರ್ಷಗಳ ಶ್ರೇಷ್ಠತೆ. ಬಾಗಲಕೋಟೆಯಲ್ಲಿ ಪ್ರೀಮಿಯಂ ಆಸ್ತಿ ಹೂಡಿಕೆಗೆ ನಿಮ್ಮ ವಿಶ್ವಾಸಾರ್ಹ ಪಾಲುದಾರ.",
+  isoCertified: "ಐಎಸ್ಒ ಪ್ರಮಾಣೀಕೃತ",
     copyright: "© 2024 ಕಾಮಧೇನು ಡೆವಲಪರ್ಸ್. ಎಲ್ಲಾ ಹಕ್ಕುಗಳನ್ನು ಕಾಯ್ದಿರಿಸಲಾಗಿದೆ.",
     
     // WhatsApp

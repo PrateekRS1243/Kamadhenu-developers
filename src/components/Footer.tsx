@@ -41,7 +41,7 @@ const Footer: React.FC = () => {
               </div>
             </div>
             <p className="text-gray-400 leading-relaxed">
-              10 years of excellence in real estate development. Your trusted partner for premium property investments in Bagalkot.
+              {t('footerAbout')}
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((social, index) => (
@@ -135,7 +135,7 @@ const Footer: React.FC = () => {
             viewport={{ once: true }}
             className="space-y-6"
           >
-            <h4 className="text-lg font-bold">Contact Info</h4>
+            <h4 className="text-lg font-bold">{t('contactInfo')}</h4>
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-orange-500" />
@@ -182,11 +182,11 @@ const Footer: React.FC = () => {
             </p>
             
             <div className="flex flex-wrap items-center space-x-6 text-sm text-gray-400">
-              <span>Government Approved</span>
+              <span>{t('reraApproved')}</span>
               <span>•</span>
-              <span>ISO Certified</span>
+              <span>{t('isoCertified')}</span>
               <span>•</span>
-              <span>10+ Years Experience</span>
+              <span>{t('experience')}</span>
             </div>
           </div>
         </motion.div>
