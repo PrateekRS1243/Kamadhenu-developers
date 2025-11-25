@@ -43,11 +43,6 @@ const Hero: React.FC = () => {
               transition={{ duration: 0.8 }}
               className="space-y-6"
             >
-              <div className="inline-flex items-center space-x-2 bg-orange-100 text-orange-800 px-4 py-2 rounded-full">
-                <div className="w-2 h-2 bg-orange-500 rounded-full animate-pulse"></div>
-                <span className="text-sm font-medium">10+ Years in Real Estate</span>
-              </div>
-              
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
                 {t('heroTitle')}
               </h1>
@@ -108,24 +103,35 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="hidden lg:block"
           >
+            {/* Experience Badge */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.7 }}
+              className="inline-flex items-center space-x-2 bg-orange-100 text-orange-800 px-4 py-2 rounded-full mb-8 -mt-12"
+            >
+              <div className="w-2 h-2 bg-orange-500 rounded-full animate-pulse"></div>
+              <span className="text-sm font-medium">10+ Years in Real Estate</span>
+            </motion.div>
+
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-4">
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
                   <ImageWithFallback
-                    src="https://images.unsplash.com/photo-1689574666650-de9cd6056e82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHxyZXNpZGVudGlhbCUyMHByb3BlcnR5JTIwZGV2ZWxvcG1lbnR8ZW58MXx8fHwxNzU5ODQ4MTc4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                    src="/2.jpg"
                     alt="Residential Development"
-                    className="w-full h-32 object-cover rounded-lg mb-4"
+                    className="w-full h-auto object-cover rounded-lg mb-4"
                   />
                   <h3 className="text-white font-medium">Premium Plots</h3>
                   <p className="text-gray-300 text-sm">In prime locations</p>
                 </div>
               </div>
-              <div className="space-y-4 mt-8">
+              <div className="space-y-4">
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
                   <ImageWithFallback
-                    src="https://images.unsplash.com/photo-1671210868607-dda1b1948863?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZWFsJTIwZXN0YXRlJTIwcGxvdCUyMGxheW91dHxlbnwxfHx8fDE3NTk4NDgxNzl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                    src="/clear.jpg"
                     alt="Plot Layout"
-                    className="w-full h-32 object-cover rounded-lg mb-4"
+                    className="w-full h-auto object-cover rounded-lg mb-4"
                   />
                   <h3 className="text-white font-medium">Clear Documentation</h3>
                   <p className="text-gray-300 text-sm">Government approved</p>

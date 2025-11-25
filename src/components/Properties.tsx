@@ -23,7 +23,7 @@ const Properties: React.FC = () => {
       titleKey: 'sikkeriTitle',
       locationKey: 'sikkeriLocation',
       sizesKey: 'sikkeriSizes',
-      image: 'https://images.unsplash.com/photo-1689574666650-de9cd6056e82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHxyZXNpZGVudGlhbCUyMHByb3BlcnR5JTIwZGV2ZWxvcG1lbnR8ZW58MXx8fHwxNzU5ODQ4MTc4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+      image: '/1_.jpg',
       highlights: ['Prime Location', 'Near Teacher\'s Layout', 'ODD Sizes Available']
     },
     {
@@ -32,7 +32,7 @@ const Properties: React.FC = () => {
       locationKey: 'vivekanandLocation',
       landmarkKey: 'vivekanandLandmark',
       sizesKey: 'vivekanandSizes',
-      image: 'https://images.unsplash.com/photo-1671210868607-dda1b1948863?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZWFsJTIwZXN0YXRlJTIwcGxvdCUyMGxheW91dHxlbnwxfHx8fDE3NTk4NDgxNzl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+      image: '/3.jpg',
       highlights: ['Near Railway Station', 'Multiple Sizes', 'Bus Stand Proximity']
     },
     {
@@ -41,7 +41,7 @@ const Properties: React.FC = () => {
       locationKey: 'indiLocation',
       landmarkKey: 'indiLandmark',
       sizesKey: 'indiSizes',
-      image: 'https://images.unsplash.com/photo-1694702740570-0a31ee1525c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBvZmZpY2UlMjBidWlsZGluZ3xlbnwxfHx8fDE3NTk4MTE1MTF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+      image: '/4.jpg',
       highlights: ['Railway Station 300m', 'Strategic Location', 'ODD Sizes']
     },
     {
@@ -50,7 +50,7 @@ const Properties: React.FC = () => {
       locationKey: 'simikeriLocation',
       landmarkKey: 'simikeriLandmark',
       sizesKey: 'simikeriSizes',
-      image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXNpZGVudGlhbCUyMHBsb3R8ZW58MXx8fHwxNzU5ODQ4MTc5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+      image: '/5.jpg',
       highlights: ['Near School', 'National Highway Access', 'ODD Sizes']
     }
   ];
