@@ -5,28 +5,51 @@ import { motion } from 'motion/react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
 const About: React.FC = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   const testimonials = [
     {
       name: "Prakash Vadvadgi",
-      location: "Sikkeri Cross",
-      designation: "Director, MBA College Bagalkot",
+      location: language === 'kn' ? "ಸಿಕ್ಕೇರಿ ಕ್ರಾಸ್" : "Sikkeri Cross",
+      designation: language === 'kn' ? "ನಿರ್ದೇಶಕರು, MBA ಕಾಲೇಜು ಬಾಗಲಕೋಟೆ" : "Director, MBA College Bagalkot",
       contact: "9035058214",
-      availability: "6 PM - 8 PM",
-      text: "Excellent service and transparent dealings. I bought my plot 3 years ago and I'm very satisfied with my investment.",
+      availability: language === 'kn' ? "ಸಂಜೆ 6 ರಿಂದ 8" : "6 PM - 8 PM",
+      text: language === 'kn' 
+        ? "ಅತ್ಯುತ್ತಮ ಸೇವೆ ಮತ್ತು ಪಾರದರ್ಶಕ ವ್ಯವಹಾರ. 3 ವರ್ಷಗಳ ಹಿಂದೆ ಪ್ಲಾಟ್ ಖರೀದಿಸಿದ್ದೇನೆ, ನನ್ನ ಹೂಡಿಕೆಯಿಂದ ತುಂಬಾ ತೃಪ್ತಿ."
+        : "Excellent service and transparent dealings. Bought my plot 3 years ago and very satisfied with my investment.",
       rating: 5
     },
     {
-      name: "Priya Sharma",
-      location: "Vivekanand Nagar",
-      text: "The team was very helpful throughout the process. Clear documentation and great location. Highly recommended!",
+      name: "M. I. Shirur",
+      location: language === 'kn' ? "ಖರೀದಿ: ಏಪ್ರಿಲ್ 2024" : "Plot Purchased: April 2024",
+      designation: language === 'kn' ? "ನಿವೃತ್ತ ಬ್ಯಾಂಕ್ ಉದ್ಯೋಗಿ" : "Retired Bank Employee",
+      contact: "9900104944",
+      availability: language === 'kn' ? "ಸಂಜೆ 6 ರಿಂದ 8" : "6 PM - 8 PM",
+      text: language === 'kn'
+        ? "ಪ್ರಮುಖ ಸ್ಥಳಗಳು, ಸಮಂಜಸ ಬೆಲೆ ಮತ್ತು ಸ್ಪಷ್ಟ ದಾಖಲಾತಿ. ಸಂಪೂರ್ಣ ವಿಶ್ವಾಸದಿಂದ ಇತರರಿಗೆ ಶಿಫಾರಸು ಮಾಡುತ್ತೇನೆ."
+        : "Prime locations, reasonable pricing, and clear documentation. Very confident and have recommended to others.",
       rating: 5
     },
     {
-      name: "Manjunath Reddy",
-      location: "Indi Colony",
-      text: "Been dealing with Kamadhenu Developers for years. They are trustworthy and deliver what they promise.",
+      name: "Prasannakumar",
+      location: language === 'kn' ? "ಸಿಕ್ಕೇರಿ" : "Sikkeri Location",
+      designation: language === 'kn' ? "ಶಿಕ್ಷಕರು" : "Teacher",
+      contact: "7259459730",
+      availability: language === 'kn' ? "ಸಂಜೆ 6 ರಿಂದ 8" : "6 PM - 8 PM",
+      text: language === 'kn'
+        ? "ಅತ್ಯಂತ ಸ್ನೇಹಪರ ಡೆವಲಪರ್. ಪಾವತಿ ವಿಳಂಬವಾದಾಗಲೂ ತಾಳ್ಮೆಯಿಂದ ಬೆಂಬಲ ನೀಡಿದರು. ಸಂಪೂರ್ಣ ಪ್ರಕ್ರಿಯೆ ತುಂಬಾ ಚೆನ್ನಾಗಿತ್ತು."
+        : "Very friendly developer. Patient and supportive even when payment was delayed. The entire process was handled smoothly.",
+      rating: 5
+    },
+    {
+      name: "Manjunath Paagi",
+      location: language === 'kn' ? "ಸಿಕ್ಕೇರಿ" : "Sikkeri",
+      designation: language === 'kn' ? "ಶಿಕ್ಷಕರು" : "Teacher",
+      contact: "8073832673",
+      availability: language === 'kn' ? "ಸಂಜೆ 6 ರಿಂದ 8" : "6 PM - 8 PM",
+      text: language === 'kn'
+        ? "ನಗರದೊಳಗಿನ ಪ್ರಮುಖ ಸ್ಥಳ. ಆಸ್ಪತ್ರೆ, ಸೂಪರ್ಮಾರ್ಕೆಟ್, ಬಸ್ ಸ್ಟಾಂಡ್ ಮತ್ತು ರೈಲ್ವೆ ಹತ್ತಿರ. ಉತ್ತಮ ಸಂಪರ್ಕ."
+        : "Prime location within city. Hospitals, supermarkets, bus stand and railway nearby. Excellent connectivity.",
       rating: 5
     }
   ];
@@ -142,7 +165,7 @@ const About: React.FC = () => {
             What Our Customers Say
           </h3>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {testimonials.map((testimonial, index) => (
               <motion.div
                 key={index}

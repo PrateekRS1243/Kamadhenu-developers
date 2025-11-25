@@ -33,9 +33,7 @@ const Footer: React.FC = () => {
             className="space-y-6"
           >
             <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-gradient-to-br from-orange-500 to-red-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">K</span>
-              </div>
+              <img src="/logo.png" alt="Kamadhenu Developers" className="h-16 w-auto" />
               <div>
                 <h3 className="text-lg font-bold">{t('companyName')}</h3>
               </div>
@@ -176,7 +174,7 @@ const Footer: React.FC = () => {
           viewport={{ once: true }}
           className="border-t border-gray-800 mt-12 pt-8"
         >
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 mb-6">
             <p className="text-gray-400 text-sm">
               {t('copyright')}
             </p>
@@ -184,10 +182,15 @@ const Footer: React.FC = () => {
             <div className="flex flex-wrap items-center space-x-6 text-sm text-gray-400">
               <span>{t('reraApproved')}</span>
               <span>•</span>
-              <span>{t('isoCertified')}</span>
-              <span>•</span>
               <span>{t('experience')}</span>
             </div>
+          </div>
+
+          {/* Designer Credit */}
+          <div className="text-center pt-4 border-t border-gray-800">
+            <p className="text-gray-500 text-xs">
+              Designed by <span className="text-orange-500">Hrishikesh</span> • <a href="tel:9353030118" className="text-gray-400 hover:text-orange-500 transition-colors">9353030118</a>
+            </p>
           </div>
         </motion.div>
       </div>

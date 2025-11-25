@@ -90,7 +90,7 @@ const translations = {
   contactInfo: "Contact Info",
   footerAbout: "10 years of excellence in real estate development. Your trusted partner for premium property investments in Bagalkot.",
   isoCertified: "ISO Certified",
-    copyright: "© 2024 Kamadhenu Developers. All rights reserved.",
+    copyright: "© 2025 Kamadhenu Developers. All rights reserved.",
     
     // WhatsApp
     whatsappText: "Chat with us on WhatsApp"
@@ -176,7 +176,7 @@ const translations = {
   contactInfo: "ಸಂಪರ್ಕ ಮಾಹಿತಿ",
   footerAbout: "ರಿಯಲ್ ಎಸ್ಟೇಟ್ ಅಭಿವೃದ್ಧಿಯಲ್ಲಿ 10 ವರ್ಷಗಳ ಶ್ರೇಷ್ಠತೆ. ಬಾಗಲಕೋಟೆಯಲ್ಲಿ ಪ್ರೀಮಿಯಂ ಆಸ್ತಿ ಹೂಡಿಕೆಗೆ ನಿಮ್ಮ ವಿಶ್ವಾಸಾರ್ಹ ಪಾಲುದಾರ.",
   isoCertified: "ಐಎಸ್ಒ ಪ್ರಮಾಣೀಕೃತ",
-    copyright: "© 2024 ಕಾಮಧೇನು ಡೆವಲಪರ್ಸ್. ಎಲ್ಲಾ ಹಕ್ಕುಗಳನ್ನು ಕಾಯ್ದಿರಿಸಲಾಗಿದೆ.",
+    copyright: "© 2025 ಕಾಮಧೇನು ಡೆವಲಪರ್ಸ್. ಎಲ್ಲಾ ಹಕ್ಕುಗಳನ್ನು ಕಾಯ್ದಿರಿಸಲಾಗಿದೆ.",
     
     // WhatsApp
     whatsappText: "WhatsApp ನಲ್ಲಿ ನಮ್ಮೊಂದಿಗೆ ಚಾಟ್ ಮಾಡಿ"

@@ -35,9 +35,7 @@ const Header: React.FC = () => {
             className="flex items-center space-x-2"
             whileHover={{ scale: 1.02 }}
           >
-            <div className="w-10 h-10 bg-gradient-to-br from-orange-500 to-red-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">K</span>
-            </div>
+            <img src="/logo.png" alt="Kamadhenu Developers" className="h-16 w-auto" />
             <div>
               <h1 className="text-lg font-bold text-gray-800">{t('companyName')}</h1>
             </div>
