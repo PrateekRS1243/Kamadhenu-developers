@@ -32,7 +32,7 @@ const Properties: React.FC = () => {
       locationKey: 'vivekanandLocation',
       landmarkKey: 'vivekanandLandmark',
       sizesKey: 'vivekanandSizes',
-      image: '/3.jpg',
+      image: '/4.jpg',
       highlights: ['Near Railway Station', 'Multiple Sizes', 'Bus Stand Proximity']
     },
     {
@@ -41,7 +41,7 @@ const Properties: React.FC = () => {
       locationKey: 'indiLocation',
       landmarkKey: 'indiLandmark',
       sizesKey: 'indiSizes',
-      image: '/4.jpg',
+      image: '/3.jpg',
       highlights: ['Railway Station 300m', 'Strategic Location', 'ODD Sizes']
     },
     {
