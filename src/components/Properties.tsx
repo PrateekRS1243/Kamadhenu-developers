@@ -11,7 +11,7 @@ interface Property {
   landmarkKey?: string;
   sizesKey: string;
   image: string;
-  highlights: string[];
+  highlights: string[]; // keys for t()
 }
 
 const Properties: React.FC = () => {
@@ -24,7 +24,7 @@ const Properties: React.FC = () => {
       locationKey: 'sikkeriLocation',
       sizesKey: 'sikkeriSizes',
       image: '/1_.jpg',
-      highlights: ['Prime Location', 'Near Teacher\'s Layout', 'ODD Sizes Available']
+      highlights: ['highlightPrimeLocation', 'highlightNearTeachersLayout', 'highlightOddSizesAvailable']
     },
     {
       id: 'vivekanand',
@@ -33,7 +33,7 @@ const Properties: React.FC = () => {
       landmarkKey: 'vivekanandLandmark',
       sizesKey: 'vivekanandSizes',
       image: '/4.jpg',
-      highlights: ['Near Railway Station', 'Multiple Sizes', 'Bus Stand Proximity']
+      highlights: ['highlightNearRailwayStation', 'highlightMultipleSizes', 'highlightBusStandProximity']
     },
     {
       id: 'indi',
@@ -42,7 +42,7 @@ const Properties: React.FC = () => {
       landmarkKey: 'indiLandmark',
       sizesKey: 'indiSizes',
       image: '/3.jpg',
-      highlights: ['Railway Station 300m', 'Strategic Location', 'ODD Sizes']
+      highlights: ['highlightRailwayStation300m', 'highlightStrategicLocation', 'highlightOddSizes']
     },
     {
       id: 'simikeri',
@@ -51,7 +51,7 @@ const Properties: React.FC = () => {
       landmarkKey: 'simikeriLandmark',
       sizesKey: 'simikeriSizes',
       image: '/5.jpg',
-      highlights: ['Near School', 'National Highway Access', 'ODD Sizes']
+      highlights: ['highlightNearSchool', 'highlightHighwayAccess', 'highlightOddSizes']
     }
   ];
 
@@ -105,7 +105,7 @@ const Properties: React.FC = () => {
                 />
                 <div className="absolute top-4 left-4">
                   <span className="bg-gradient-to-r from-orange-500 to-red-600 text-white px-3 py-1 rounded-full text-sm font-medium">
-                    Available Now
+                    {t('availableNow')}
                   </span>
                 </div>
               </div>
@@ -121,7 +121,7 @@ const Properties: React.FC = () => {
                   <div className="flex items-start space-x-2 mb-3">
                     <MapPin className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" />
                     <span className="text-sm text-gray-600">
-                      <strong>Landmark:</strong> {t(property.landmarkKey)}
+                      <strong>{t('landmarkLabel')}:</strong> {t(property.landmarkKey)}
                     </span>
                   </div>
                 )}
@@ -151,7 +151,7 @@ const Properties: React.FC = () => {
                       key={idx}
                       className="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium"
                     >
-                      {highlight}
+                      {t(highlight)}
                     </span>
                   ))}
                 </div>
@@ -169,7 +169,7 @@ const Properties: React.FC = () => {
                     className="flex items-center justify-center space-x-2 bg-green-100 text-green-800 px-4 py-3 rounded-lg font-medium hover:bg-green-200 transition-colors"
                   >
                     <Phone className="w-4 h-4" />
-                    <span>Call</span>
+                    <span>{t('call')}</span>
                   </button>
                 </div>
               </div>
@@ -187,10 +187,10 @@ const Properties: React.FC = () => {
         >
           <div className="bg-gradient-to-r from-orange-500 to-red-600 rounded-2xl p-8 text-white">
             <h3 className="text-2xl font-bold mb-4">
-              Ready to Invest in Your Future?
+              {t('ctaTitle')}
             </h3>
             <p className="text-lg mb-6 opacity-90">
-              Contact us today for site visits and detailed information about our properties.
+              {t('ctaSubtitle')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -198,14 +198,14 @@ const Properties: React.FC = () => {
                 className="inline-flex items-center justify-center space-x-2 bg-white text-orange-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors"
               >
                 <Phone className="w-5 h-5" />
-                <span>Call: 9448229175</span>
+                <span>{t('callColon')} 9448229175</span>
               </a>
               <a
                 href="tel:8088841243"
                 className="inline-flex items-center justify-center space-x-2 bg-white text-orange-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors"
               >
                 <Phone className="w-5 h-5" />
-                <span>Call: 8088841243</span>
+                <span>{t('callColon')} 8088841243</span>
               </a>
             </div>
           </div>

@@ -9,7 +9,7 @@ const About: React.FC = () => {
 
   const testimonials = [
     {
-      name: "Prakash Vadvadgi",
+      name: language === 'kn' ? "ಪ್ರಕಾಶ ವದ್ವಾಡಗಿ" : "Prakash Vadvadgi",
       location: language === 'kn' ? "ಸಿಕ್ಕೇರಿ ಕ್ರಾಸ್" : "Sikkeri Cross",
       designation: language === 'kn' ? "ನಿರ್ದೇಶಕರು, MBA ಕಾಲೇಜು ಬಾಗಲಕೋಟೆ" : "Director, MBA College Bagalkot",
       contact: "9035058214",
@@ -20,7 +20,7 @@ const About: React.FC = () => {
       rating: 5
     },
     {
-      name: "M. I. Shirur",
+      name: language === 'kn' ? "ಎಂ. ಐ. ಶಿರೂರ್" : "M. I. Shirur",
       location: language === 'kn' ? "ಖರೀದಿ: ಏಪ್ರಿಲ್ 2024" : "Plot Purchased: April 2024",
       designation: language === 'kn' ? "ನಿವೃತ್ತ ಬ್ಯಾಂಕ್ ಉದ್ಯೋಗಿ" : "Retired Bank Employee",
       contact: "9900104944",
@@ -31,7 +31,7 @@ const About: React.FC = () => {
       rating: 5
     },
     {
-      name: "Prasannakumar",
+      name: language === 'kn' ? "ಪ್ರಸನ್ನಕುಮಾರ" : "Prasannakumar",
       location: language === 'kn' ? "ಸಿಕ್ಕೇರಿ" : "Sikkeri Location",
       designation: language === 'kn' ? "ಶಿಕ್ಷಕರು" : "Teacher",
       contact: "7259459730",
@@ -42,7 +42,7 @@ const About: React.FC = () => {
       rating: 5
     },
     {
-      name: "Manjunath Paagi",
+      name: language === 'kn' ? "ಮಂಜುನಾಥ ಪಾಗಿ" : "Manjunath Paagi",
       location: language === 'kn' ? "ಸಿಕ್ಕೇರಿ" : "Sikkeri",
       designation: language === 'kn' ? "ಶಿಕ್ಷಕರು" : "Teacher",
       contact: "8073832673",
@@ -85,7 +85,7 @@ const About: React.FC = () => {
                 {t('aboutContent')}
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Our commitment to excellence has made us a household name in the region, with satisfied customers who trust us for their property investments.
+                {t('commitmentLine')}
               </p>
             </div>
 
@@ -133,7 +133,7 @@ const About: React.FC = () => {
               <div className="absolute top-6 left-6 bg-white/90 backdrop-blur-sm rounded-xl p-4">
                 <div className="text-center">
                   <div className="text-2xl font-bold text-orange-600">10+</div>
-                  <div className="text-sm text-gray-700">Years</div>
+                  <div className="text-sm text-gray-700">{t('yearsLabel')}</div>
                 </div>
               </div>
             </div>
@@ -143,11 +143,11 @@ const About: React.FC = () => {
               <div className="grid grid-cols-2 gap-4 text-center">
                 <div>
                   <div className="text-xl font-bold text-blue-600">5+</div>
-                  <div className="text-xs text-gray-600">Projects</div>
+                  <div className="text-xs text-gray-600">{t('projectsLabel')}</div>
                 </div>
                 <div>
                   <div className="text-xl font-bold text-green-600">300+</div>
-                  <div className="text-xs text-gray-600">Customers</div>
+                  <div className="text-xs text-gray-600">{t('customersLabel')}</div>
                 </div>
               </div>
             </div>
@@ -162,7 +162,7 @@ const About: React.FC = () => {
           viewport={{ once: true }}
         >
           <h3 className="text-3xl font-bold text-center text-gray-900 mb-12">
-            What Our Customers Say
+            {t('testimonialsTitle')}
           </h3>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -188,7 +188,7 @@ const About: React.FC = () => {
                 </p>
                 
                 <div className="border-t border-gray-100 pt-4">
-                  <div className="font-medium text-gray-900">{testimonial.name}</div>
+                  <div className={`${language === 'kn' ? 'font-bold' : 'font-medium'} text-gray-900`}>{testimonial.name}</div>
                   <div className="text-sm text-gray-500">{testimonial.location}</div>
                   {testimonial.designation && (
                     <div className="text-sm text-blue-600 mt-1">{testimonial.designation}</div>
@@ -197,7 +197,7 @@ const About: React.FC = () => {
                     <div className="text-sm text-gray-600 mt-1">📞 {testimonial.contact}</div>
                   )}
                   {testimonial.availability && (
-                    <div className="text-xs text-green-600 mt-1">Available: {testimonial.availability}</div>
+                    <div className="text-xs text-green-600 mt-1">{t('availabilityLabel')} {testimonial.availability}</div>
                   )}
                 </div>
               </motion.div>
@@ -215,16 +215,16 @@ const About: React.FC = () => {
         >
           <div className="bg-gradient-to-r from-orange-500 to-red-600 rounded-2xl p-8 lg:p-12 text-white">
             <div className="text-center mb-12">
-              <h3 className="text-3xl font-bold mb-4">Our Core Values</h3>
-              <p className="text-xl opacity-90">The principles that guide everything we do</p>
+              <h3 className="text-3xl font-bold mb-4">{t('coreValuesTitle')}</h3>
+              <p className="text-xl opacity-90">{t('coreValuesSubtitle')}</p>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
               {[
-                { title: "Transparency", desc: "Clear and honest communication in all dealings" },
-                { title: "Quality", desc: "Uncompromising standards in every project" },
-                { title: "Trust", desc: "Building long-term relationships with customers" },
-                { title: "Innovation", desc: "Adopting modern practices and technologies" }
+                { title: t('valueTransparency'), desc: t('valueTransparencyDesc') },
+                { title: t('valueQuality'), desc: t('valueQualityDesc') },
+                { title: t('valueTrust'), desc: t('valueTrustDesc') },
+                { title: t('valueInnovation'), desc: t('valueInnovationDesc') }
               ].map((value, index) => (
                 <div key={index} className="text-center">
                   <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">

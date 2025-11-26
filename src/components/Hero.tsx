@@ -83,15 +83,15 @@ const Hero: React.FC = () => {
             >
               <div className="text-center">
                 <div className="text-3xl font-bold text-white">10+</div>
-                <div className="text-sm text-gray-300">Years Experience</div>
+                <div className="text-sm text-gray-300">{t('yearsExperienceLabel')}</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-white">300+</div>
-                <div className="text-sm text-gray-300">Happy Customers</div>
+                <div className="text-sm text-gray-300">{t('happyCustomers')}</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-white">5+</div>
-                <div className="text-sm text-gray-300">Projects Completed</div>
+                <div className="text-sm text-gray-300">{t('projectsCompleted')}</div>
               </div>
             </motion.div>
           </div>
@@ -111,7 +111,7 @@ const Hero: React.FC = () => {
               className="inline-flex items-center space-x-2 bg-orange-100 text-orange-800 px-4 py-2 rounded-full mb-8 -mt-12"
             >
               <div className="w-2 h-2 bg-orange-500 rounded-full animate-pulse"></div>
-              <span className="text-sm font-medium">10+ Years in Real Estate</span>
+              <span className="text-sm font-medium">{t('experienceBadge')}</span>
             </motion.div>
 
             <div className="grid grid-cols-2 gap-4">
@@ -122,8 +122,8 @@ const Hero: React.FC = () => {
                     alt="Residential Development"
                     className="w-full h-auto object-cover rounded-lg mb-4"
                   />
-                  <h3 className="text-white font-medium">Premium Plots</h3>
-                  <p className="text-gray-300 text-sm">In prime locations</p>
+                  <h3 className="text-white font-medium">{t('premiumPlots')}</h3>
+                  <p className="text-gray-300 text-sm">{t('inPrimeLocations')}</p>
                 </div>
               </div>
               <div className="space-y-4">
@@ -133,8 +133,8 @@ const Hero: React.FC = () => {
                     alt="Plot Layout"
                     className="w-full h-auto object-cover rounded-lg mb-4"
                   />
-                  <h3 className="text-white font-medium">Clear Documentation</h3>
-                  <p className="text-gray-300 text-sm">Government approved</p>
+                  <h3 className="text-white font-medium">{t('documentation')}</h3>
+                  <p className="text-gray-300 text-sm">{t('governmentApproved')}</p>
                 </div>
               </div>
             </div>

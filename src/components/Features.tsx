@@ -76,7 +76,7 @@ const Features: React.FC = () => {
             {t('featuresTitle')}
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            We have been serving our customers with excellence and trust for over 10 years. Here's what makes us different.
+            {t('featuresBlurb')}
           </p>
         </motion.div>
 
@@ -126,19 +126,19 @@ const Features: React.FC = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h3 className="text-3xl font-bold text-gray-900 mb-6">
-                  Your Trust, Our Commitment
+                  {t('trustTitle')}
                 </h3>
                 <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                  For 10 years, we have been building not just properties, but lasting relationships with our customers. Every plot we develop comes with our guarantee of quality, transparency, and legal compliance.
+                  {t('trustDesc')}
                 </p>
                 <div className="grid grid-cols-2 gap-6">
                   <div className="text-center">
                     <div className="text-3xl font-bold text-orange-600 mb-2">300+</div>
-                    <div className="text-sm text-gray-600">Satisfied Customers</div>
+                    <div className="text-sm text-gray-600">{t('satisfiedCustomers')}</div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-green-600 mb-2">100%</div>
-                    <div className="text-sm text-gray-600">Legal Compliance</div>
+                    <div className="text-sm text-gray-600">{t('legalCompliance')}</div>
                   </div>
                 </div>
               </div>
@@ -147,15 +147,15 @@ const Features: React.FC = () => {
                 <div className="space-y-4">
                   <div className="bg-white rounded-xl p-6 shadow-md">
                     <Clock className="w-8 h-8 text-blue-500 mb-3" />
-                    <h4 className="font-medium text-gray-900 mb-2">Quick Processing</h4>
-                    <p className="text-sm text-gray-600">Fast documentation and registration process</p>
+                    <h4 className="font-medium text-gray-900 mb-2">{t('quickProcessing')}</h4>
+                    <p className="text-sm text-gray-600">{t('fastDocumentation')}</p>
                   </div>
                 </div>
-                <div className="space-y-4 mt-8">
+                <div className="space-y-4">
                   <div className="bg-white rounded-xl p-6 shadow-md">
                     <Users className="w-8 h-8 text-green-500 mb-3" />
-                    <h4 className="font-medium text-gray-900 mb-2">Expert Team</h4>
-                    <p className="text-sm text-gray-600">Experienced professionals at your service</p>
+                    <h4 className="font-medium text-gray-900 mb-2">{t('expertTeam')}</h4>
+                    <p className="text-sm text-gray-600">{t('expertProfessionals')}</p>
                   </div>
                 </div>
               </div>

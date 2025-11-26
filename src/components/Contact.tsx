@@ -61,7 +61,7 @@ const Contact: React.FC = () => {
             viewport={{ once: true }}
             className="bg-white rounded-2xl shadow-xl p-8"
           >
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">Send us a Message</h3>
+            <h3 className="text-2xl font-bold text-gray-900 mb-6">{t('sendUsMessage')}</h3>
             
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -77,7 +77,7 @@ const Contact: React.FC = () => {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors"
-                    placeholder="Your full name"
+                    placeholder={t('placeholderName')}
                   />
                 </div>
                 <div>
@@ -92,7 +92,7 @@ const Contact: React.FC = () => {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors"
-                    placeholder="Your phone number"
+                    placeholder={t('placeholderPhone')}
                   />
                 </div>
               </div>
@@ -108,7 +108,7 @@ const Contact: React.FC = () => {
                   value={formData.email}
                   onChange={handleChange}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors"
-                  placeholder="Your email address"
+                  placeholder={t('placeholderEmail')}
                 />
               </div>
 
@@ -124,7 +124,7 @@ const Contact: React.FC = () => {
                   rows={4}
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors resize-none"
-                  placeholder="Tell us about your requirements..."
+                  placeholder={t('placeholderMessage')}
                 ></textarea>
               </div>
 
@@ -154,7 +154,7 @@ const Contact: React.FC = () => {
                     <Phone className="w-6 h-6 text-orange-600" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-gray-900">Call Us</h4>
+                    <h4 className="font-bold text-gray-900">{t('callUs')}</h4>
                     <div className="space-y-1">
                       <a href="tel:9448229175" className="text-orange-600 hover:text-orange-700 transition-colors block">
                         +91 9448229175
@@ -173,14 +173,14 @@ const Contact: React.FC = () => {
                     <MessageCircle className="w-6 h-6 text-green-600" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-gray-900">WhatsApp</h4>
+                    <h4 className="font-bold text-gray-900">{t('whatsapp')}</h4>
                     <a 
                       href="https://wa.me/919448229175" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="text-green-600 hover:text-green-700 transition-colors"
                     >
-                      Chat with us instantly
+                      {t('chatInstantly')}
                     </a>
                   </div>
                 </div>
@@ -192,7 +192,7 @@ const Contact: React.FC = () => {
                     <MapPin className="w-6 h-6 text-blue-600" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-gray-900">Visit Us</h4>
+                    <h4 className="font-bold text-gray-900">{t('visitUs')}</h4>
                     <p className="text-gray-600">Sector 32, Plot 46E</p>
                     <p className="text-gray-600">Shivappayyana Math Building</p>
                     <p className="text-gray-600">Navanagar, Bagalkot - 587103</p>
@@ -206,8 +206,8 @@ const Contact: React.FC = () => {
                     <Clock className="w-6 h-6 text-purple-600" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-gray-900">Office Hours</h4>
-                    <p className="text-gray-600">Monday - Saturday</p>
+                    <h4 className="font-bold text-gray-900">{t('officeHours')}</h4>
+                    <p className="text-gray-600">{t('mondaySaturday')}</p>
                     <p className="text-sm text-gray-500">10:00 AM - 6:00 PM</p>
                   </div>
                 </div>
@@ -216,9 +216,9 @@ const Contact: React.FC = () => {
 
             {/* Quick Actions */}
             <div className="bg-gradient-to-r from-orange-500 to-red-600 rounded-2xl p-6 text-white">
-              <h4 className="text-xl font-bold mb-4">Need Immediate Assistance?</h4>
+              <h4 className="text-xl font-bold mb-4">{t('needHelpTitle')}</h4>
               <p className="mb-6 opacity-90">
-                Our team is ready to help you with site visits, documentation, and any queries you may have.
+                {t('needHelpSubtitle')}
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <a
@@ -226,7 +226,7 @@ const Contact: React.FC = () => {
                   className="flex items-center justify-center space-x-2 bg-white text-orange-600 px-4 py-2 rounded-lg font-medium hover:bg-gray-100 transition-colors"
                 >
                   <Phone className="w-4 h-4" />
-                  <span>Call Now</span>
+                  <span>{t('callNow')}</span>
                 </a>
                 <a
                   href="https://wa.me/919448229175"
@@ -235,7 +235,7 @@ const Contact: React.FC = () => {
                   className="flex items-center justify-center space-x-2 bg-white/20 text-white px-4 py-2 rounded-lg font-medium hover:bg-white/30 transition-colors"
                 >
                   <MessageCircle className="w-4 h-4" />
-                  <span>WhatsApp</span>
+                  <span>{t('whatsapp')}</span>
                 </a>
               </div>
             </div>
@@ -252,7 +252,7 @@ const Contact: React.FC = () => {
         >
           <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
             <div className="p-6 border-b border-gray-200">
-              <h3 className="text-xl font-bold text-gray-900">Find Us</h3>
+              <h3 className="text-xl font-bold text-gray-900">{t('findUs')}</h3>
               <p className="text-gray-600">Sector 32, Plot 46E, Shivappayyana Math Building, Navanagar, Bagalkot</p>
             </div>
             <div className="h-96 w-full">
