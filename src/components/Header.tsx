@@ -12,11 +12,28 @@ const Header: React.FC = () => {
   };
 
   const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+    // Close menu first
     setIsMenuOpen(false);
+    
+    // Delay scroll to allow menu animation to complete
+    setTimeout(() => {
+      const element = document.getElementById(id);
+      
+      if (element) {
+        // Get the header height dynamically
+        const header = document.querySelector('header');
+        const headerHeight = header ? header.offsetHeight : 100;
+        
+        // Get element position and add extra margin for better visibility
+        const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+        const offsetPosition = elementPosition - headerHeight + 10; // Scroll a bit less
+        
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
+    }, 250);
   };
 
   const phoneNumbers = ['9448229175', '8088841243'];
