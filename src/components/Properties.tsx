@@ -201,11 +201,11 @@ const Properties: React.FC = () => {
                 <span>{t('callColon')} +91 8884229175</span>
               </a>
               <a
-                href="tel:8088841243"
+                href="tel:+918088841243"
                 className="inline-flex items-center justify-center space-x-2 bg-white text-orange-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors"
               >
                 <Phone className="w-5 h-5" />
-                <span>{t('callColon')} 8088841243</span>
+                <span>{t('callColon')} +91 8088841243</span>
               </a>
             </div>
           </div>

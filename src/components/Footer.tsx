@@ -141,7 +141,7 @@ const Footer: React.FC = () => {
                   <a href="tel:+918884229175" className="text-gray-400 hover:text-white transition-colors block">
                     +91 8884229175
                   </a>
-                  <a href="tel:8088841243" className="text-gray-400 hover:text-white transition-colors block">
+                  <a href="tel:+918088841243" className="text-gray-400 hover:text-white transition-colors block">
                     +91 8088841243
                   </a>
                 </div>
