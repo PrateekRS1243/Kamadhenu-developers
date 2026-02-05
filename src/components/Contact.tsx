@@ -17,7 +17,7 @@ const Contact: React.FC = () => {
     
     // Create WhatsApp message
     const message = `Name: ${formData.name}\nPhone: ${formData.phone}\nEmail: ${formData.email}\nMessage: ${formData.message}`;
-    const whatsappUrl = `https://wa.me/919448229175?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/918884229175?text=${encodeURIComponent(message)}`;
     
     // Open WhatsApp
     window.open(whatsappUrl, '_blank');
@@ -156,8 +156,8 @@ const Contact: React.FC = () => {
                   <div>
                     <h4 className="font-bold text-gray-900">{t('callUs')}</h4>
                     <div className="space-y-1">
-                      <a href="tel:9448229175" className="text-orange-600 hover:text-orange-700 transition-colors block">
-                        +91 9448229175
+                      <a href="tel:+918884229175" className="text-orange-600 hover:text-orange-700 transition-colors block">
+                        +91 8884229175
                       </a>
                       <a href="tel:8088841243" className="text-orange-600 hover:text-orange-700 transition-colors block">
                         +91 8088841243
@@ -175,7 +175,7 @@ const Contact: React.FC = () => {
                   <div>
                     <h4 className="font-bold text-gray-900">{t('whatsapp')}</h4>
                     <a 
-                      href="https://wa.me/919448229175" 
+                      href="https://wa.me/918884229175" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="text-green-600 hover:text-green-700 transition-colors"
@@ -222,14 +222,14 @@ const Contact: React.FC = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <a
-                  href="tel:9448229175"
+                  href="tel:+918884229175"
                   className="flex items-center justify-center space-x-2 bg-white text-orange-600 px-4 py-2 rounded-lg font-medium hover:bg-gray-100 transition-colors"
                 >
                   <Phone className="w-4 h-4" />
                   <span>{t('callNow')}</span>
                 </a>
                 <a
-                  href="https://wa.me/919448229175"
+                  href="https://wa.me/918884229175"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center space-x-2 bg-white/20 text-white px-4 py-2 rounded-lg font-medium hover:bg-white/30 transition-colors"

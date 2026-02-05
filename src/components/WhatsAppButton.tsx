@@ -7,7 +7,7 @@ const WhatsAppButton: React.FC = () => {
   const { t } = useLanguage();
 
   const handleWhatsAppClick = () => {
-    const phoneNumber = '919448229175'; // Remove + and spaces
+    const phoneNumber = '918884229175'; // Remove + and spaces
     const message = encodeURIComponent('Hello, I am interested in your properties. Please provide more information.');
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(whatsappUrl, '_blank');

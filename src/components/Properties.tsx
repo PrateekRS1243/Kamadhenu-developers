@@ -56,14 +56,14 @@ const Properties: React.FC = () => {
   ];
 
   const handleRegisterNow = (propertyTitle: string) => {
-    const phoneNumber = '919448229175';
+    const phoneNumber = '918884229175';
     const message = encodeURIComponent(`Hello, I am interested in ${propertyTitle}. Please provide more details.`);
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(whatsappUrl, '_blank');
   };
 
   const handleCall = () => {
-    window.location.href = 'tel:9448229175';
+    window.location.href = 'tel:+918884229175';
   };
 
   return (
@@ -194,11 +194,11 @@ const Properties: React.FC = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:9448229175"
+                href="tel:+918884229175"
                 className="inline-flex items-center justify-center space-x-2 bg-white text-orange-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors"
               >
                 <Phone className="w-5 h-5" />
-                <span>{t('callColon')} 9448229175</span>
+                <span>{t('callColon')} +91 8884229175</span>
               </a>
               <a
                 href="tel:8088841243"

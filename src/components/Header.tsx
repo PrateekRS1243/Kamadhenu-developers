@@ -36,7 +36,7 @@ const Header: React.FC = () => {
     }, 250);
   };
 
-  const phoneNumbers = ['9448229175', '8088841243'];
+  const phoneNumbers = ['+918884229175', '+918088841243'];
 
   return (
     <motion.header 
